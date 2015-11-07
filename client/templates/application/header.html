@@ -5,9 +5,21 @@
     <nav>
       {{#if currentUser}}
         <ul>
-          <li>Files</li>
-          <li>Messages</li>
-          <li>Profile</li>
+          <li>
+            <a href="">
+              <i class="fa fa-file"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-user"></i>
+            </a>
+          </li>
         </ul>
       {{else}}
         {{> loginButtons}}

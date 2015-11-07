@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'reset';
+
+header {
+  position: relative;
+  background: $color-lightgray;
+  height: 4rem;
+  line-height: 4rem;
+  
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    
+    li {
+      display: inline-block;
+    }
+    
+    a {
+      display: block;
+      padding: 0 1rem;
+      font-size: 1.4rem;
+      color: $color-darkblue;
+      
+      &:hover {
+        color: $color-lightblue;
+      }
+    }
+  }
+}
