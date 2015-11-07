@@ -1,0 +1,17 @@
+<template name="header">
+  <header>
+    <h2 class="logo">Huddle</h2>
+    
+    <nav>
+      {{#if currentUser}}
+        <ul>
+          <li>Files</li>
+          <li>Messages</li>
+          <li>Profile</li>
+        </ul>
+      {{else}}
+        {{> loginButtons}}
+      {{/if}}
+    </nav>
+  </header>
+</template>

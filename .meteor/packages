@@ -24,3 +24,4 @@ accounts-password
 erasaur:meteor-lodash
 fortawesome:fontawesome
 kadira:flow-router
+kadira:blaze-layout
