@@ -1,3 +1,17 @@
 <template name="profile">
-  <h3>My Profile</h3>
+  <div id="profile">
+    {{#with currentUser}}
+      <h3>My Profile</h3>
+      
+      <h6>Email: <strong>{{email}}</strong></h6>
+      <h6>Role: <strong>{{profile.role}}</strong></h6>
+      
+      <form class="profile-form">
+        <input type="text" name="first_name" value="{{profile.firstName}}" placeholder="First Name">
+        <input type="text" name="last_name" value="{{profile.lastName}}" placeholder="Last Name">
+        
+        <button>Save Details</button>
+      </form>
+    {{/with}}
+  </div>
 </template>

@@ -1,0 +1,15 @@
+<template name="file">
+  <div id="file">
+
+    {{#if Template.subscriptionsReady}}
+      {{#with file}}
+        <img src="{{url}}" />
+        <div class="file-details">
+          <h6 class="file_id">#{{_id}}</h6>
+          <h6 class="file_created_at">{{formatted_date}}</h6>
+        </div>
+        
+      {{/with}}
+    {{/if}}
+  </div>
+</template>

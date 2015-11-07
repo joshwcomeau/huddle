@@ -4,9 +4,6 @@ Template.files.onCreated(function() {
 });
 
 Template.files.helpers({
-  ready: function() {
-    
-  },
   myFiles: function() {
     return Files.find({})
   }
