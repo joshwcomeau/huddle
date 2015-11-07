@@ -11,7 +11,7 @@ Template.filesUpload.events({
         alert (error);
       } else {
         Meteor.call('uploadFile', downloadUrl, (err, fileId) => {
-          console.log("Client callback for file upload");
+          console.log("Client callback for file upload", err, fileId);
         });
       }
     });

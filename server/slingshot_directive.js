@@ -14,8 +14,7 @@ Slingshot.createDirective("medicalFile", Slingshot.S3Storage, {
   },
 
   key: function (file) {
-    //Store file into a directory by the user's username.
-    var user = Meteor.users.findOne(this.userId);
-    return user.username + "/" + file.name;
+    //Store file into a directory by the user's ID.
+    return this.userId + "/" + file.name;
   }
 });
