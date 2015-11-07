@@ -34,6 +34,18 @@ h3 {
   font-weight: $fw-heavy;
   color: $color-navy;
 }
+h4 {
+  font-size: 1.5rem;
+  
+  font-weight: $fw-bold;
+  color: $color-darkblue;
+}
+h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: $fw-heavy;
+  color: #666;
+}
 
 #wrapper {
   position: relative;
@@ -46,4 +58,15 @@ h3 {
   max-width: $size-main-width;
   margin: 1rem auto;
   padding: 1rem;
+}
+
+.loading {
+  position: relative;
+  text-align: center;
+  padding: 3rem 1rem;
+  
+  i {
+    font-size: 3rem;
+    color: $color-darkblue;
+  }
 }
