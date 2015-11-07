@@ -1,29 +1,31 @@
 <template name="header">
   <header>
-    <h2 class="logo">Huddle</h2>
-    
-    <nav>
-      {{#if currentUser}}
-        <ul>
-          <li>
-            <a href="">
-              <i class="fa fa-file"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fa fa-envelope"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fa fa-user"></i>
-            </a>
-          </li>
-        </ul>
-      {{else}}
-        {{> loginButtons}}
-      {{/if}}
-    </nav>
+    <div class="header-content">
+      <h2 class="logo">Huddle</h2>
+      
+      <nav>
+        {{#if currentUser}}
+          <ul>
+            <li>
+              <a href="/files">
+                <i class="fa fa-file"></i>
+              </a>
+            </li>
+            <li>
+              <a href="/messages">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a href="/profile">
+                <i class="fa fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        {{else}}
+          {{> loginButtons}}
+        {{/if}}
+      </nav>
+    </div>
   </header>
 </template>

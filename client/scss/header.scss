@@ -1,16 +1,26 @@
 @import 'variables';
-@import 'reset';
+@import 'mixins';
 
 header {
   position: relative;
   background: $color-lightgray;
-  height: 4rem;
-  line-height: 4rem;
+  
+  .header-content {
+    @include width-wrap($size-main-width);
+    height: 4rem;
+    line-height: 4rem;
+
+  }
+  
+  .logo {
+    position: relative;
+    left: 1rem;
+  }
   
   nav {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 1rem;
     bottom: 0;
     
     li {

@@ -1,0 +1,6 @@
+@mixin width-wrap($width) {
+  width: 100%;
+  max-width: $width;
+  position: relative;
+  margin: 0 auto;
+}

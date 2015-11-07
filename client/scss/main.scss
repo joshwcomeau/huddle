@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'reset';
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -8,7 +9,10 @@ html, body, input, select, button, textarea {
   font-family: 'Lato', sans-serif;
 }
 
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   background: $color-white;
 }
 
@@ -24,4 +28,22 @@ h2 {
   font-size: 2.5rem;
   font-weight: $fw-bold;
   color: $color-crimson;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: $fw-heavy;
+  color: $color-navy;
+}
+
+#wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  max-width: $size-main-width;
+  margin: 1rem auto;
+  padding: 1rem;
 }
